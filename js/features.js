@@ -18,3 +18,11 @@ document.getElementById('show-transaction-form').addEventListener('click',functi
           
           
 });
+document.getElementById('btn-login').addEventListener('click',function (){
+          console.log('show add money btn clicked');
+          showASectionById(window.location.href='./home.html');
+
+
+          
+          
+});
