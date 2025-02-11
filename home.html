@@ -14,22 +14,24 @@
 
           <div class="stat place-items-center">
                     <div class="stat-title">Account Balance</div>
-                    <div class="stat-value text-secondary">4200</div>
+                    <div id="balance" class="stat-value text-secondary">4400</div>
                     
           </div>
           <div class="divider divider-primary border-spacing-2">
-            <p class="divider-title">My Personal Bank</p>
+            <!-- <p class="divider-title">My Personal Bank</p> -->
+            <div class="btn-group">
+              <button id="show-add-money-form" class="btn btn-success">Add Money</button>
+              <button id="show-cash-out-form" class="btn btn-warning">Cash Out</button>
+              <button id="show-transaction-form" class="btn btn-warning">Transaction</button>
+            </div>
           </div>
           
           
                     <div class="bank flex flex-col items-center justify-center h-screen bg-[#86a3e7]">
-                      <div class="btn-group">
-                        <button id="btn-add-money" class="btn btn-success">Add Money</button>
-                        <button class="btn btn-warning">Cash Out</button>
-                      </div>
-                      <div class="divider divider-neutral"></div>
+                      
+                      <!-- add-money-start -->
                           <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
-                                    <form class="card-body">
+                                    <form id="add-money-form" class="card-body">
                                               <h2 class="add-money card-title flex-1 justify-center">
                                                 <img class="money-add-img" src="./assets/earning.png" alt="" srcset="">
                                                 Add Money
@@ -38,19 +40,19 @@
                                         <label class="label">
                                           <span class="label-text">Add Amount :</span>
                                         </label>
-                                        <input type="text" placeholder="Enter amount" class="input input-bordered" required />
+                                        <input id="add-money" type="text" placeholder="Enter amount" class="input input-bordered" required />
                                       </div>
                                       <div class="form-control">
                                         <label class="label">
                                           <span class="label-text">Pin :</span>
                                         </label>
-                                        <input type="password" placeholder="Enter your pin" class="input input-bordered" required />
+                                        <input id="pin" type="password" placeholder="Enter your pin" class="input input-bordered" required />
                                         <label class="label">
                                           <a href="#" class="label-text-alt link link-hover">Forgot password?</a>
                                         </label>
                                       </div>
                                       <div class="form-control mt-6">
-                                        <button class="btn btn-primary">Login</button>
+                                        <button id="btn-add-money" class="btn btn-primary">Add Money</button>
                                       </div>
                                     </form>
                                   </div>
@@ -58,26 +60,59 @@
                           
                 </div>
           </div>
+          <!-- add-money-end -->
 
+          <!-- cash-out-start -->
+          <div class="bank flex flex-col items-center justify-center h-screen bg-[#86a3e7]">
+          <div class="card bg-[#ffffff] w-full max-w-sm shrink-0 shadow-2xl">
+            <form id="cash-out-form" class="hidden card-body">
+                      <h2 class="add-money card-title flex-1 justify-center">
+                        <img class="money-add-img" src="./assets/earning.png" alt="" srcset="">
+                        Cash Out
+                      </h2>                 
+              <div class="form-control">
+                <label class="label">
+                  <span class="label-text">Amount :</span>
+                </label>
+                <input id="add-money" type="text" placeholder="Enter amount" class="input input-bordered" required />
+              </div>
+              <div class="form-control">
+                <label class="label">
+                  <span class="label-text">Pin :</span>
+                </label>
+                <input id="pin" type="password" placeholder="Enter your pin" class="input input-bordered" required />
+                <label class="label">
+                  <a href="#" class="label-text-alt link link-hover">Forgot password?</a>
+                </label>
+              </div>
+              <div class="form-control mt-6">
+                <button id="btn-add-money" class="btn btn-primary">Cash Out</button>
+              </div>
+            </form>
+          </div>
+        </div>
+        <!-- cash-out-end -->
+         <!-- transaction-start -->
+         <div class="bank flex flex-col items-center justify-center h-screen bg-[#86a3e7]">
+          <div class="card bg-[#ffffff] w-full max-w-sm shrink-0 shadow-2xl">
+            <form id="transaction-form" class="hidden card-body">
+                      <h2 class="add-money card-title flex-1 justify-center">
+                        <img class="money-add-img" src="./assets/earning.png" alt="" srcset="">
+                        Transaction-history
+                      </h2>    
+                      <div id="transaction-container">
 
+                      </div>            
+              
+            </form>
+          </div>
+        </div>
+  
+</div>
+</div>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+          <script src="./js/utilities.js"></script>
           <script src="./js/addMoney.js"></script>
-          <script src="./js/script.js"></script>
+          <script src="./js/features.js"></script>
 </body>
 </html>
