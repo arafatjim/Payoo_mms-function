@@ -1,0 +1,46 @@
+.stat-title{
+          font-size: 1.8em;
+          font-weight: bold;
+          color: #6e6d6d;
+          margin-bottom: 10px;
+}
+.stat-value{
+          font-size: 2.5em;
+          font-weight: bold;
+          color: #6e6d6d;
+}
+.divider-title{
+          margin-top: 20px;
+          margin-bottom: 20px;
+          font-size: 1.5em;
+          font-weight: bolder;
+          padding: 5px 15px;
+          border-radius: 8px;
+          background-color: #ff3f3c;
+          color: rgb(255, 255, 255);
+}
+.btn-group{
+          margin-bottom: 20px;
+          margin-top: -100px;
+          
+}
+.label-text{
+          font-size: 1em;
+          font-weight: bold;
+          color: #4f4f4f;
+          
+}
+.add-money{
+          padding: 30px;
+          font-size: 1.5em;
+          font-weight: bolder;
+          padding: 5px 15px;
+          border-radius: 8px;
+          color: blue;
+          background: #fc5c65;
+          font-family: 'Poppins', sans-serif;
+}
+.money-add-img{
+          width: 50px;
+          height: 50px;
+}
